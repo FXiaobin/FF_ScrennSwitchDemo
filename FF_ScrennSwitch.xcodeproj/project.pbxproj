@@ -13,6 +13,11 @@
 		18CABF3B1FD4E2E20096F0BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CABF3A1FD4E2E20096F0BA /* Assets.xcassets */; };
 		18CABF3E1FD4E2E20096F0BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18CABF3C1FD4E2E20096F0BA /* LaunchScreen.storyboard */; };
 		18CABF411FD4E2E20096F0BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CABF401FD4E2E20096F0BA /* main.m */; };
+		18CABF4C1FD5141E0096F0BA /* PlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CABF4B1FD5141E0096F0BA /* PlayerView.m */; };
+		18CABF521FD530560096F0BA /* AllSwitchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CABF511FD530560096F0BA /* AllSwitchViewController.m */; };
+		18CABF551FD5306A0096F0BA /* SingleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CABF541FD5306A0096F0BA /* SingleViewController.m */; };
+		18CABF581FD5367D0096F0BA /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CABF571FD5367C0096F0BA /* BaseNavigationController.m */; };
+		B6481BCE306180991AA0E20D /* libPods-FF_ScrennSwitch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1F3A184759D245431FB73CB /* libPods-FF_ScrennSwitch.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,17 @@
 		18CABF3D1FD4E2E20096F0BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18CABF3F1FD4E2E20096F0BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18CABF401FD4E2E20096F0BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18CABF4A1FD5141E0096F0BA /* PlayerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerView.h; sourceTree = "<group>"; };
+		18CABF4B1FD5141E0096F0BA /* PlayerView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerView.m; sourceTree = "<group>"; };
+		18CABF501FD530560096F0BA /* AllSwitchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AllSwitchViewController.h; sourceTree = "<group>"; };
+		18CABF511FD530560096F0BA /* AllSwitchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AllSwitchViewController.m; sourceTree = "<group>"; };
+		18CABF531FD5306A0096F0BA /* SingleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleViewController.h; sourceTree = "<group>"; };
+		18CABF541FD5306A0096F0BA /* SingleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleViewController.m; sourceTree = "<group>"; };
+		18CABF561FD5367C0096F0BA /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		18CABF571FD5367C0096F0BA /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		AD0807D1D9C4940C99803085 /* Pods-FF_ScrennSwitch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_ScrennSwitch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FF_ScrennSwitch/Pods-FF_ScrennSwitch.debug.xcconfig"; sourceTree = "<group>"; };
+		BAE0B2196836B41A94DC8CC3 /* Pods-FF_ScrennSwitch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FF_ScrennSwitch.release.xcconfig"; path = "Pods/Target Support Files/Pods-FF_ScrennSwitch/Pods-FF_ScrennSwitch.release.xcconfig"; sourceTree = "<group>"; };
+		D1F3A184759D245431FB73CB /* libPods-FF_ScrennSwitch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FF_ScrennSwitch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6481BCE306180991AA0E20D /* libPods-FF_ScrennSwitch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,8 @@
 			children = (
 				18CABF301FD4E2E10096F0BA /* FF_ScrennSwitch */,
 				18CABF2F1FD4E2E10096F0BA /* Products */,
+				5DC9085994F8EABB2D395412 /* Pods */,
+				F35D8AF809A785744F0493D8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,10 +77,18 @@
 		18CABF301FD4E2E10096F0BA /* FF_ScrennSwitch */ = {
 			isa = PBXGroup;
 			children = (
+				18CABF561FD5367C0096F0BA /* BaseNavigationController.h */,
+				18CABF571FD5367C0096F0BA /* BaseNavigationController.m */,
 				18CABF311FD4E2E10096F0BA /* AppDelegate.h */,
 				18CABF321FD4E2E10096F0BA /* AppDelegate.m */,
 				18CABF341FD4E2E20096F0BA /* ViewController.h */,
 				18CABF351FD4E2E20096F0BA /* ViewController.m */,
+				18CABF501FD530560096F0BA /* AllSwitchViewController.h */,
+				18CABF511FD530560096F0BA /* AllSwitchViewController.m */,
+				18CABF531FD5306A0096F0BA /* SingleViewController.h */,
+				18CABF541FD5306A0096F0BA /* SingleViewController.m */,
+				18CABF4A1FD5141E0096F0BA /* PlayerView.h */,
+				18CABF4B1FD5141E0096F0BA /* PlayerView.m */,
 				18CABF371FD4E2E20096F0BA /* Main.storyboard */,
 				18CABF3A1FD4E2E20096F0BA /* Assets.xcassets */,
 				18CABF3C1FD4E2E20096F0BA /* LaunchScreen.storyboard */,
@@ -71,6 +98,23 @@
 			path = FF_ScrennSwitch;
 			sourceTree = "<group>";
 		};
+		5DC9085994F8EABB2D395412 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD0807D1D9C4940C99803085 /* Pods-FF_ScrennSwitch.debug.xcconfig */,
+				BAE0B2196836B41A94DC8CC3 /* Pods-FF_ScrennSwitch.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F35D8AF809A785744F0493D8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D1F3A184759D245431FB73CB /* libPods-FF_ScrennSwitch.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18CABF441FD4E2E20096F0BA /* Build configuration list for PBXNativeTarget "FF_ScrennSwitch" */;
 			buildPhases = (
+				2918A3F36E0EEFCA04C47CE4 /* [CP] Check Pods Manifest.lock */,
 				18CABF2A1FD4E2E10096F0BA /* Sources */,
 				18CABF2B1FD4E2E10096F0BA /* Frameworks */,
 				18CABF2C1FD4E2E10096F0BA /* Resources */,
+				4B1A778811794AB232DDAF4B /* [CP] Embed Pods Frameworks */,
+				E94683F495401C5958C2E4CD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -137,14 +184,69 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2918A3F36E0EEFCA04C47CE4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FF_ScrennSwitch-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B1A778811794AB232DDAF4B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FF_ScrennSwitch/Pods-FF_ScrennSwitch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E94683F495401C5958C2E4CD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FF_ScrennSwitch/Pods-FF_ScrennSwitch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18CABF2A1FD4E2E10096F0BA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				18CABF361FD4E2E20096F0BA /* ViewController.m in Sources */,
+				18CABF581FD5367D0096F0BA /* BaseNavigationController.m in Sources */,
 				18CABF411FD4E2E20096F0BA /* main.m in Sources */,
 				18CABF331FD4E2E10096F0BA /* AppDelegate.m in Sources */,
+				18CABF551FD5306A0096F0BA /* SingleViewController.m in Sources */,
+				18CABF4C1FD5141E0096F0BA /* PlayerView.m in Sources */,
+				18CABF521FD530560096F0BA /* AllSwitchViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,10 +378,13 @@
 		};
 		18CABF451FD4E2E20096F0BA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD0807D1D9C4940C99803085 /* Pods-FF_ScrennSwitch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E58Y5ZCUT;
 				INFOPLIST_FILE = FF_ScrennSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fanxiaobin.FF-ScrennSwitch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -289,10 +394,13 @@
 		};
 		18CABF461FD4E2E20096F0BA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAE0B2196836B41A94DC8CC3 /* Pods-FF_ScrennSwitch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5E58Y5ZCUT;
 				INFOPLIST_FILE = FF_ScrennSwitch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "fanxiaobin.FF-ScrennSwitch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
