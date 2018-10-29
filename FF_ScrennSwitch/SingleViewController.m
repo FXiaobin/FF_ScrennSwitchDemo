@@ -10,6 +10,7 @@
 
 #import "PlayerView.h"
 
+#import <Masonry.h>
 
 // 用到的两个宏：
 #define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
