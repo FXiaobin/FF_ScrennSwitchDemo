@@ -28,6 +28,7 @@
 
 @implementation SingleViewController
 
+
 -(void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
     [self.navigationController setNavigationBarHidden:YES animated:YES];
@@ -80,6 +81,12 @@
         }
     };
     [self.view addSubview:self.playerView];
+    
+    [self.playerView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.and.top.equalTo(self.view);
+        make.right.equalTo(self.view.mas_right);
+        make.height.mas_equalTo(300);
+    }];
 }
 
 - (void)swithchScreen{
@@ -130,14 +137,28 @@
 
 - (void)orientationChange:(BOOL)landscapeRight{
     if (landscapeRight) {
+        
+        [self.playerView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.center.equalTo(self.view);
+            make.width.mas_equalTo(CGRectGetHeight(self.view.bounds));
+            make.height.mas_equalTo(CGRectGetWidth(self.view.bounds));
+        }];
+        
         [UIView animateWithDuration:0.2f animations:^{
             self.playerView.transform = CGAffineTransformMakeRotation(M_PI_2);
-            self.playerView.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height);
-        }];
+        } ];
+        
     } else {
+        
+        [self.playerView mas_remakeConstraints:^(MASConstraintMaker *make) {
+            make.top.equalTo(self.view);
+            make.left.equalTo(self.view);
+            make.height.mas_equalTo(300);
+            make.width.mas_equalTo(CGRectGetWidth(self.view.bounds));
+        }];
+        
         [UIView animateWithDuration:0.2f animations:^{
             self.playerView.transform = CGAffineTransformMakeRotation(0);
-            self.playerView.frame = CGRectMake(0, 0, self.view.bounds.size.width, 300);
         }];
     }
 }
